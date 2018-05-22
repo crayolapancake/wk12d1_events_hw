@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Reading App</title>
+  <script src="js/reading_app.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1 id="heading">Reading List App</h1>
+
+  <h2>Save for Later</h2>
+  <form id="form">
+
+    <h2>Inputs</h3>
+      <h3><label for="title">Title:</label>
+        <input id="title" type="text"></h3>
+        <p id="title-result">Write a title</p>
+
+        <h3><label for="author">Author:</label>
+          <input id="author" type="text"></h3>
+          <p id="author-result">Write an author</p>
+
+
+          <h2>Radio</h2>
+          <h3>
+            <label for="category">Category:</label>
+
+            <input type="radio" name="category" value="book">
+            <label for="book">Book</label>
+
+            <input type="radio" name="category" value="blog">
+            <label for="blog">Blog</label>
+
+            <input type="radio" name="category" value="article">
+            <label for="article">Article</label>
+          </h3>
+          <p id="radio-result">Pick a category</p>
+
+
+          <h2>Select a Genre</h2>
+          <select id="genre">
+            <option disabled selected>Genre</option>
+            <option value="Horror">Horror</option>
+            <option value="Current Affairs">Current Affairs</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Sci-fi">Sci-fi</option>
+            <option value="Classic">Classic</option>
+          </select>
+          <p id="genre-result">Choose a genre</p>
+
+          <button type="submit" id="submit_form">Submit Form</button>
+        </form>
+        <h3 id="form-result">Submit me!</h3>
+
+
+        <h3>Title :: Author :: Category :: Genre</h3>
+        <ul id="reading-list"></ul>
+
+      </body>
+      </html>
